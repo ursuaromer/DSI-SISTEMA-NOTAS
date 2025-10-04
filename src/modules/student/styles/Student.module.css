@@ -1,0 +1,36 @@
+.studentModule {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+
+.mainContent {
+  flex: 1;
+  margin-left: 250px;
+  min-height: 100vh;
+}
+
+.contentPlaceholder {
+  margin-left: 250px;
+  padding: 40px;
+  text-align: center;
+  color: #666;
+  font-size: 18px;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .mainContent {
+    margin-left: 0;
+  }
+  
+  .contentPlaceholder {
+    margin-left: 0;
+    padding: 20px;
+  }
+}

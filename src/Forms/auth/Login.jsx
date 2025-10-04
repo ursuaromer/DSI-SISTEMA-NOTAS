@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import styles from './Login.module.css';
 
 const Login = () => {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     username: '',
     password: ''
@@ -37,9 +39,9 @@ const Login = () => {
     e.preventDefault();
     
     if (validateForm()) {
-      // Aquí iría la lógica para enviar los datos al servidor
+      // Simulando login exitoso - redirigir al módulo estudiante
       console.log('Formulario enviado:', formData);
-      // Por ejemplo: loginUser(formData);
+      navigate('/student');
     }
   };
 
